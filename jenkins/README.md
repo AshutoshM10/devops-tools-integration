@@ -106,13 +106,16 @@ Ensure Java 17 is installed:
 java -version
 ```
 
-If not, install or switch to Java 11:
+If not, install or switch to Java 17:
 
 ```bash
-sudo apt install openjdk-11-jdk -y
+sudo apt install openjdk-17-jdk -y
 sudo update-alternatives --config java
 ```
-
+### Set the JAVA_HOME path
+```
+JAVA_HOME=/usr/lib/jvm/java-1.17.0-openjdk-amd64
+```
 #### Port Conflict
 
 Check if port 8080 is in use:
@@ -157,13 +160,6 @@ Install recommended plugins or others based on your project needs:
 - **SonarQube** for code quality checks.
 - **OWASP Dependency-Check** for security scans.
 
-### Backup
-
-Regularly back up the Jenkins configuration and job data:
-
-```bash
-sudo tar -czvf jenkins-backup.tar.gz /var/lib/jenkins
-```
 
 ---
 
