@@ -69,8 +69,8 @@ pipeline {
     agent any
 
     environment {
-        SONARQUBE_SERVER = 'SonarQubeServer'
-        SONARQUBE_PROJECT = 'your-project-key'
+        SONARQUBE_SERVER = 'sonarqube url or ip:9000'
+        SONARQUBE_PROJECT = 'our-project-key'
         OWASP_REPORT_DIR = 'owasp-dependency-check-report'
     }
 
